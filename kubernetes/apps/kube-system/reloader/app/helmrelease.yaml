@@ -5,16 +5,16 @@ metadata:
   name: reloader
   namespace: &namespace kube-system
 spec:
-  interval: 15m
+  interval: 30m
   chart:
     spec:
       chart: reloader
-      version: v1.0.22
+      version: 1.0.29
       sourceRef:
         kind: HelmRepository
         name: stakater
         namespace: flux-system
-  maxHistory: 3
+  maxHistory: 2
   install:
     createNamespace: true
     remediation:
