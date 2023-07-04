@@ -5,16 +5,16 @@ metadata:
   name: cert-manager
   namespace: cert-manager
 spec:
-  interval: 15m
+  interval: 30m
   chart:
     spec:
       chart: cert-manager
-      version: v1.11.1
+      version: v1.12.2
       sourceRef:
         kind: HelmRepository
         name: jetstack
         namespace: flux-system
-  maxHistory: 3
+  maxHistory: 2
   install:
     createNamespace: true
     remediation:
