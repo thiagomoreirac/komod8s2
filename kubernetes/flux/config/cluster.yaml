@@ -8,7 +8,7 @@ spec:
   interval: 30m
   ref:
     branch: main
-  url: "https://github.com/thiagomoreirac/komod8s2"
+  url: "https://github.com/thiagomoreirac/komod8s2.git"
   ignore: |
     # exclude all
     /*

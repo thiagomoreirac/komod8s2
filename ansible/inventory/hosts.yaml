@@ -1,0 +1,13 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        kube0:
+          ansible_user: nva
+          ansible_host: 192.168.50.246
+    worker:
+      hosts:
+        kube0:
+          ansible_user: nva
+          ansible_host: 192.168.50.246
