@@ -1,20 +1,15 @@
 {
     "files.associations": {
-        "*.json5": "jsonc",
-        "**/ansible/**/*.yaml": "ansible",
-        "**/ansible/**/*.sops.yaml": "yaml",
-        "**/ansible/**/inventory/**/*.yaml": "yaml",
-        "**/kubernetes/**/*.sops.toml": "plaintext"
+        "*.json5": "jsonc"
     },
+    "sops.defaults.ageKeyFile": "age.key",
     "yaml.schemas": {
-        "ansible": "ansible/*.yaml",
-        "Kubernetes": "kubernetes/*.yaml"
+        "Kubernetes": "./kubernetes/*.yaml"
     },
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.bracketPairsHorizontal": true,
-    "editor.guides.highlightActiveBracketPair": true,
-    "editor.hover.delay": 1500,
-    "files.trimTrailingWhitespace": true,
-    "ansible.python.interpreterPath": "/usr/bin/python3",
+    "vs-kubernetes": {
+        "vs-kubernetes.kubeconfig": "./kubeconfig",
+        "vs-kubernetes.knownKubeconfigs": [
+          "./kubeconfig"
+      ]
+    }
 }
