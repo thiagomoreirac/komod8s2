@@ -9,10 +9,10 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[Makefile]
+[*.{bash,py,sh}]
 indent_style = space
 indent_size = 4
 
-[*.{bash,sh}]
+[*.{bash,py,sh}.j2]
 indent_style = space
 indent_size = 4
